@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lembou Pharel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="./icons8-launch-box-1000.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <style>
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: 0.2rem solid #000000;
+    font-size: 2rem;
+    border-radius: 50%;
+    /*margin: 3rem 1.5rem 3rem 0;*/
+    transition: 0.3s ease;
+    color: #000000;
+}
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #484646;
+    box-shadow: 0  0 25px #454444;
+}
+
+
+
+span{
+    color: #b74b4b;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: calc(100% + 8px - 90%);
+    height: 100%;
+    border-left: 3px solid rgb(255, 255, 255);
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Backend Developer";
+    }
+    21%, 40%{
+        content: "Programmer";
+    }
+    41%, 60%{
+        content: "Reverse engineer";
+    }
+    61%, 80%{
+        content: "Pentester";
+    }
+    81%, 100%{
+        content: "Script Writer";
+    }
+}
+    </style>
+    <script defer src="./bootstrap.bundle.js"></script>
+</head>
+<body>
+  <!-- header start -->
+  <header>
+    <nav class="navbar navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-lg">
+          <a class="navbar-brand mx-0 text-center h-100" href="#"><img src="./icons8-launch-box-1000.png" alt="" style="width: 50px;"> <span class="h3">Lembou Pharel</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#OffcanvasNavbar" aria-controls="OffcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="OffcanvasNavbar">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./icons8-launch-box-1000.png" alt="" style="width: 50px;"> Lembou Pharel</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="btn-close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mb-2 mb-md-0 mx-auto">
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link disabled">Testimonials</a>
+                  </li>
+                <li class="nav-item mx-3 dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false" role="button">Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
+                    <li><a class="dropdown-item" href="#">Software engineering</a></li>
+                    <li><a class="dropdown-item" href="#">Backend</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form>
+                <a href="#" class="form-control btn btn-dark  text-center mt-5 mt-md-0 px-3">Contact Me</a>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+    </nav>
+
+
+  </header>
+  <!-- header end -->
+
+
+  <!-- body start -->
+   
+  <div class="my-5 py-4 container-lg">
+    <div class="card mt-1 border-0">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <img src="./ProfilePicture.jpg" alt="Lembou pharel" class="card-img img-fluid  rounded-buttom-circle rounded-top-pill" style="border-radius: 100%;">
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="card-body mt-3 mt-lg-0">
+                    <h1 class="card-title display-4 fw-bolder">Hi, It's <span>Lembou Pharel</span></h1>
+                    <h3 class="card-subtitle typing-text mb-3 display-5">I'm a <span></span></h3>
+                    <br><p class="card-text mt-3 mt-lg-0 h5">As a passionate Cybersecurity enthusiast, I'm dedicated to staying at the forefront of the latest technologies and trends in the field. My commitment to Cybersecurity drives me to protect systems and data, and also contribute to a safer digital environment for everyone.</p>
+                    <a href="#" class="card-link btn btn-outline-danger mt-4 rounded-4 w-auto border-2 fw-bolder">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- body end -->
+
+<!--footer start-->
+<footer class="mt-5  mt-auto py-1 bg-body-tertiary fixed-bottom">
+    <div class="container-md">
+      <span class="text-body-secondary">
+        <div class="social-icons d-flex text-start h3">
+            <p class="me-auto my-auto text-center blockquote-footer"><span>My socials</span></p>
+            <a href="https://www.linkedin.com/in/lembou-pharel/" class="mx-2" target="_blank"><i class=""> <img src="./linkedin.svg" alt="" class="mb-2"> </i></a>
+            <a href="https://github.com/lemboupharel5" class="mx-2" target="_blank"><i class=""> <img src="./github.svg" alt="" class="mb-2"> </i></a>
+            <a href="https://www.reddit.com/u/Pharel-lems/s/8IkULK4SCX" class="mx-2" target="_blank"><i class=""> <img src="./reddit.svg" alt="" class="mb-2"> </i></a>
+            <a href="https://call.whatsapp.com/voice/d0FTosAsL3eyja8d4hIljp" class="mx-2" target="_blank"><i class=""> <img src="./whatsapp.svg" alt="" class="mb-2"> </i></a>
+        </div>
+      </span>
+    </div>
+</footer>
+<!--footer end-->
+</body>
+</html>
